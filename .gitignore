@@ -1,0 +1,20 @@
+# Node & Build artifacts
+node_modules/
+dist/
+
+# Local Environment Secrets - NEVER COMMIT CREDENTIALS
+.env
+.env*.local
+
+# Export Output files
+output/*
+!output/.gitkeep
+
+# Scratch and Cache files
+scratch/
+*.log
+
+# System & IDE files
+.DS_Store
+.vscode/
+.idea/

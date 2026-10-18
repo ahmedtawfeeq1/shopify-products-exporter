@@ -1,0 +1,40 @@
+{
+  "name": "shopify-product-export",
+  "version": "1.0.0",
+  "description": "Read-only Shopify product catalog exporter with clean descriptions and Arabic/English preservation for GenuDo",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test:connection": "tsx src/cli.ts test:connection",
+    "export:products": "tsx src/cli.ts export:products",
+    "export:excel": "python3 scripts/generate_excel.py",
+    "export:excel:active": "python3 scripts/generate_active_excel.py",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "shopify",
+    "export",
+    "graphql",
+    "genudo",
+    "catalog",
+    "csv",
+    "json"
+  ],
+  "author": "GenuDo Engineering",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.24",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
